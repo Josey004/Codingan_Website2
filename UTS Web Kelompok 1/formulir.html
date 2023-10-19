@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="formulir.css">
+  <title>Formulir Registrasi</title>
+</head>
+
+<body>
+<!-- NAVBAR -->
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">SMK Cipta Jasa</a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Hubungi Kami</a></li>
+      </ul>
+      <a href="formulir.html" class="action_btn1" id="actionBtn">Registrasi</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Hubungi Kami</a></li>
+      <li><a href="formulir.html" class="action_btn">Registrasi</a></li>
+    </div>
+  </header>
+  <!-- NAVBAR -->
+
+
+  <main>
+    <div class="container">
+      <h1>Formulir Registrasi</h1>
+      <p>Mohon di isi dengan sejujur-jujurnya</p>
+      
+      <form id="form">
+        <fieldset>
+          <h2>Data Siswa</h2><br>
+          <!-- Nama -->
+          <label for="nama">Nama Lengkap: <input type="text" name="nama" id="nama" required></label>
+          <!-- Nama -->
+
+          <!-- Jenis kelamin -->
+          <div class="jenisKelamin">
+            <label>Jenis Kelamin:</label>
+            <label for="jenisKelamin1"><input type="radio" name="jenisKelamin" id="jenisKelamin" required>Laki-Laki </label>
+            <label for="jenisKelamin2"><input type="radio" name="jenisKelamin" id="jenisKelamin" required>Perempuan </label>
+          </div>
+          <!-- Jenis Kelamin -->
+
+          <!-- Tanggal Lahir -->
+          <label for="tanggalLahir">Tanggal Lahir: <input type="date" name="tanggalLahir" id="tanggalLahir"
+              required></label><br>
+          <!-- Tanggal lahir -->
+
+          <!-- Agama -->
+          <label for="agama">Agama:
+            <select name="agama" id="agama">
+              <option value=">Pilih salah satu: "</option>
+              <option value="1">Islam</option>
+              <option value="2">Kristen</option>
+              <option value="3">Katolik</option>
+              <option value="4">Hindu</option>
+              <option value="5">Buddha</option>
+              <option value="6">Konghucu</option>
+            </select>
+          </label><br>
+          <!-- Agama -->
+
+          <!-- Alamat -->
+          <label for="alamat">Alamat: <textarea name="alamat" id="alamat" cols="30" rows="3" placeholder="Jl. Kapten Piere Tendean, Halong"
+         required></textarea></label><br>
+          <!-- Alamat -->
+
+          <!-- Asal Sekolah -->
+          <label for="asal-sekolah">Asal Sekolah: <input type="text" name="asal-sekolah" id="asal-sekolah" placeholder="SMPN 6 "
+              required></label><br>
+          <!-- Asal Sekolah -->
+
+          <!-- No HP -->
+          <label for="no-hp">Nomor HP: <input type="number" name="no-hp" id="no-hp" placeholder="081123xxxxxx"
+              required></label><br>
+          <!-- No HP -->
+
+          <!-- Email -->
+          <label for="email">Email: <input type="email" name="email" id="email" placeholder="novaria@gmail.com"
+            required></label>
+          <!--Email -->
+        </fieldset>
+
+        <fieldset>
+          <h2>Data Orang Tua </h2><br>
+          <!-- Nama Ayah -->
+          <label for="nama-ayah">Nama Ayah: <input type="text" name="nama-ayah" id="nama-ayah"></label><br>
+          <!-- Nama Ayah -->
+
+          <!-- Nama Ibu -->
+          <label for="nama-ibu">Nama Ibu: <input type="text" name="nama-ibu" id="nama-ibu"></label><br>
+          <!-- Nama Ibu -->
+
+          <!-- No HP -->
+          <label for="no-hp">Nomor HP: <input type="number" name="no-hp" id="no-hp" placeholder="081123xxxxxx"
+              required></label>
+          <!-- No HP -->
+<br>
+          <!-- Alamat -->
+          <label for="alamat">Alamat: <textarea name="alamat" id="alamat" cols="30" rows="3" placeholder="Jl. Tebet Timur II"
+              required></textarea></label>
+          <!-- Alamat -->
+        </fieldset>
+        
+        <fieldset>
+          <!-- foto -->
+          <label for="foto">Upload Foto: <input id="foto" type="file" name="foto" /></label>
+          <!-- foto -->
+<br>
+          <!-- Rata-Rata Nilai -->
+          <label for="rata-nilai">Masukkan Rata-Rata Nilai Kelas Sebelumnya: <input type="number" name="rata-nilai"
+              id="rata-nilai"></label>
+          <!-- Rata-Rata Nilai -->
+        </fieldset>
+        <div class="verification">
+          <input type="checkbox" name="verification" id="verification1" required>
+          <label for="verification1">Data di atas sudah diisi dengan sejujur-jujurnya</label>
+        </div>
+        <div class="submit">
+          <input type="submit" name="Submit" id="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <h2>SMK Cipta Jasa</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis cumque perspiciatis dicta dolores dolor
+        repellat ex itaque, quidem eligendi cum aut et qui voluptatem quod, minus rerum nihil? Fugiat, quas.</p>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <div class="footer-bottom">
+          <p>Copyright &copy;2023 </p>
+        </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- Scroll To Top -->
+  <div id="scrollToTopBtn">
+    <i class="fas fa-chevron-circle-up"></i>
+  </div>
+  <!-- Scroll To Top -->
+</body>
+<script src="main.js"></script>
+<script src="saveFile2.js"></script>
+</html>
